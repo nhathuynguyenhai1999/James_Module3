@@ -1,5 +1,6 @@
 package com.cg.module3.Dictionary;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -34,5 +35,9 @@ public class TranslateServlet extends HttpServlet {
             writer.println("Not found");
         }
         writer.println("</html>");
+        request.setAttribute("searchWord", search);
+        request.setAttribute("translation", result != null ? result : "Not found");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/index3.jsp");
+        dispatcher.forward(request, response);
     }
 }

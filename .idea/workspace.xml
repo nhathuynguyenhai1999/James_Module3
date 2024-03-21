@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf2644e3-15e8-4764-b6bb-be52df6b60a1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/module3/ChangeMoney/ConverterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/module3/ChangeMoney/ConverterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/module3/Dictionary/TranslateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/module3/Dictionary/TranslateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index2.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index3.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
         <option value="Jsp File" />
       </list>
@@ -75,6 +80,8 @@
       <workItem from="1710839557153" duration="2150000" />
       <workItem from="1710903012281" duration="98000" />
       <workItem from="1711006217602" duration="165000" />
+      <workItem from="1711006427625" duration="499000" />
+      <workItem from="1711013192964" duration="1144000" />
     </task>
     <servers />
   </component>
