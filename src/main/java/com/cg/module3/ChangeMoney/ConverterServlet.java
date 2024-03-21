@@ -8,8 +8,8 @@ import java.io.PrintWriter;
 @WebServlet(name = "ConverterServlet", value = "/convert")
 public class ConverterServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.getRequestDispatcher("/convert.jsp").forward(req, resp);
     }
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -19,7 +19,7 @@ public class ConverterServlet extends HttpServlet {
         request.setAttribute("rate", rate);
         request.setAttribute("usd", usd);
         request.setAttribute("vnd", vnd);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/index2.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/convert.jsp");
         dispatcher.forward(request, response);
         PrintWriter writer = response.getWriter();
         writer.println("<html>");

@@ -17,8 +17,8 @@ public class LoginServlet extends HttpServlet {
         String password = request.getParameter("password");
 
         if ("admin".equals(username) && "admin".equals(password)) {
-            // Tạo một đối tượng RequestDispatcher để chuyển hướng yêu cầu sang trang index1.jsp
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/index1.jsp");
+            // Tạo một đối tượng RequestDispatcher để chuyển hướng yêu cầu sang trang login.jsp
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/login.jsp");
             dispatcher.forward(request, response);
         } else {
             PrintWriter writer = response.getWriter();
@@ -26,6 +26,11 @@ public class LoginServlet extends HttpServlet {
             writer.println("<h1>Login Error</h1>");
             writer.println("</html>");
         }
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.getRequestDispatcher("/login.jsp").forward(req, resp);
     }
 }
 
